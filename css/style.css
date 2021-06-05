@@ -1,0 +1,95 @@
+/*fixed example*/
+.logo {
+	display: inline-block;
+	margin-right: 50px;
+}
+.navigation {
+	display: inline-block;
+}
+.nav-li {
+	display: inline-block;
+	margin-right: 25px;
+}
+.header-wraper {
+	background-color: lightblue;
+	padding: 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+}
+body {
+	height: 1800px;
+	padding-top: 76px;
+}
+.section-after-header {
+	/*margin-top: 76px;*/
+}
+
+/*relative & absolute example*/
+.wraper-box {
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+}
+.child-box {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	right:0;
+	bottom: 0;
+	z-index: 5;
+}
+.child-box2 {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	position: absolute;
+	top: 180px;
+	left: 180px;
+	z-index: 6;
+}
+.test {
+	position: absolute;
+	left:0;
+	bottom: 0;
+	color: #fff;
+}
+/*image example*/
+.text-image {
+	position: absolute;
+	top: 150px;
+	right: 100px;
+	color: red;
+	font-size: 25px;
+}
+.image-wraper {
+	position: relative;
+	width: 800px;
+	/*display: inline-block;*/
+}
+
+
+/*pseudo elements*/
+/*.test1::before {
+	content: 'Lesson5';
+	color: red;
+	font-size: 22px;
+}*/
+.test1::before {
+	content: url(../images/smiley.gif);
+}
+/*.test1::after {
+	content: '\2614';
+}*/
+.test1::after {
+	content: '';
+	width: 1px;
+	height: 27px;
+	background-color: blue;
+	display: inline-block;
+	margin-left: 30px;
+}
